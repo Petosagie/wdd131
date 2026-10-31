@@ -4,11 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Osagie Ohenhen</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals – Osagie Ohenhen – Personal portfolio page featuring about me, Nigeria background, system analyst role, and family.">
+    <meta name="author" content="Osagie Ohenhen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1> WDD131 - Osagie Ohenhen</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/osagie-ohenhen/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng" target="_blank"
+                rel="noopener">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Osagie Ohenhen</h1>
+
+        <div class="cards">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="bio">
+                        <p>My name is Osagie Ohenhen from Nigeria. I was born in Benin City, Nigeria. I am currently
+                            working as a System Analyst and I am happily married with four children. I am presently in
+                            The United Kingdom studying.</p>
+                    </div>
+                    <img src="images/profile.jpg" alt="Picture of Osagie Ohenhen" class="profile-img" width="180"
+                        height="220">
+                </div>
+
+                <h3>Benin City, Nigeria</h3>
+                <div class="location-info">
+                    <figure>
+                        <img src="images/nigeria-flag.png" alt="Official Flag of Nigeria" class="flag" width="120"
+                            height="60">
+                        <figcaption>Official Flag of Nigeria</figcaption>
+                    </figure>
+                    <p>Nigeria is located in West Africa and is the most populous country on the African continent.
+                        Benin City, in Edo State, is known for its rich history as the capital of the ancient Benin
+                        Kingdom, famous for its bronze artworks and cultural heritage. The country is known for its
+                        diverse cultures, vibrant music, and resilient people.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> ❋ Osagie Ohenhen ❋ Nigeria / United Kingdom</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

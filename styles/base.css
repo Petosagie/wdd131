@@ -1,0 +1,213 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #1a3a5c;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+#course-title {
+    display: block;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #1a3a5c;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Main content */
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Merriweather', Georgia, serif;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.card h2 {
+    background-color: #1a3a5c;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 1rem 0 0.5rem;
+    color: #1a3a5c;
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+/* About Me section */
+.about-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio p {
+    font-size: 0.95rem;
+}
+
+.profile-img {
+    width: 140px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.location-info {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem 1.25rem;
+    align-items: flex-start;
+}
+
+.location-info figure {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.flag {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.location-info p {
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #1a3a5c;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+#lastModified {
+    font-size: 0.85rem;
+    color: #bdc3c7;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .location-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #course-title {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
