@@ -4,20 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Temple Album</title>
-    <meta name="description" content="Temple Album learning activity for WDD 131.">
-    <meta name="author" content="Osagie Ohenhen">
+    <title>WDD 131 | Temple Album | Osagie Ohenhen</title>
+    <meta name="description"
+        content="Explore a collection of beautiful temple images in the Temple Album learning activity for WDD 131 by Osagie Ohenhen.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/hamburgermenu.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
     <header>
+        <span id="course-title">WDD 131 | Dynamic Web Fundamentals</span>
+        <h1>Temple Album</h1>
         <h1>Temple Album</h1>
         <!-- Hamburger button -->
         <button id="menu" aria-label="Open navigation menu">☰</button>
@@ -32,58 +34,69 @@
     </header>
 
     <main>
-        <h2><a href="temples.html">Home</a></h2>
-        <div class="temple-grid">
+        <h2>Home</h2>
 
-            <figure>
-                <img src="images/aba_nigeria.jpg" alt="Aba Nigeria Temple" width="400" height="250" loading="lazy">
-                <figcaption>Aba Nigeria Temple</figcaption>
-            </figure>
+        <section class="card">
+            <h3>Temple Gallery</h3>
+            <div class="temple-grid">
 
-            <figure>
-                <img src="images/accra_ghana.jpg" alt="Manti Utah Temple" width="400" height="250" loading="lazy">
-                <figcaption>Accra Ghana Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/aba_nigeria.jpg" alt="Aba Nigeria Temple" width="400" height="250" loading="lazy">
+                    <figcaption>Aba Nigeria Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/adelaide-australia.jpg" alt="Payson Utah Temple" width="400" height="250"
-                    loading="lazy">
-                <figcaption>Adelaide Australia Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/accra_ghana.jpg" alt="Accra Ghana Temple" width="400" height="250" loading="lazy">
+                    <figcaption>Accra Ghana Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/albuquerque-temple.jpg" alt="Yigo Guam Temple" width="400" height="250" loading="lazy">
-                <figcaption>AlbuquerqueTemple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/adelaide-australia.jpg" alt="Adelaide Australia Temple" width="400" height="250"
+                        loading="lazy">
+                    <figcaption>Adelaide Australia Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/apia-samoa.jpg" alt="Washington D.C. Temple" width="400" height="250" loading="lazy">
-                <figcaption>Apia Samoa Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/albuquerque-temple.jpg" alt="Albuquerque Temple" width="400" height="250"
+                        loading="lazy">
+                    <figcaption>Albuquerque Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/bern-switzerland.jpg" alt="Lima Peru Temple" width="400" height="250" loading="lazy">
-                <figcaption>Bern Switzerland Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/apia-samoa.jpg" alt="Apia Samoa Temple" width="400" height="250" loading="lazy">
+                    <figcaption>Apia Samoa Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/buenos-aires-argentina.jpg" alt="Mexico City Mexico Temple" width="400" height="250"
-                    loading="lazy">
-                <figcaption>Buenos Aires Argentina Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/bern-switzerland.jpg" alt="Bern Switzerland Temple" width="400" height="250"
+                        loading="lazy">
+                    <figcaption>Bern Switzerland Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/salt-lake.jpg" alt="Salt Lake Temple" width="400" height="250" loading="lazy">
-                <figcaption>Salt Lake Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/buenos-aires-argentina.jpg" alt="Buenos Aires Argentina Temple" width="400"
+                        height="250" loading="lazy">
+                    <figcaption>Buenos Aires Argentina Temple</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/chicago-temple.jpg" alt="St. George Utah Temple" width="400" height="250"
-                    loading="lazy">
-                <figcaption>Chicago Temple</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/salt-lake.jpg" alt="Salt Lake Temple" width="400" height="250" loading="lazy">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
 
-        </div>
+                <figure>
+                    <img src="images/chicago-temple.jpg" alt="Chicago Temple" width="400" height="250" loading="lazy">
+                    <figcaption>Chicago Temple</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>About This Album</h3>
+            <p>This Temple Album showcases beautiful temples from around the world.
+                Use the navigation links to filter by Old, New, Large, or Small temples.</p>
+        </section>
     </main>
 
     <footer>
