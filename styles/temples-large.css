@@ -1,0 +1,62 @@
+/* Tablet and up */
+@media screen and (min-width: 700px) {
+
+    /* Hide hamburger */
+    #menu {
+        display: none;
+    }
+
+    /* Show navigation horizontally */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+        margin-top: 0;
+        gap: 0.3rem;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        padding: 0.5rem 0.9rem;
+        border-radius: 4px;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Grid becomes 2 columns */
+    .temple-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    figure img {
+        height: 250px;
+    }
+}
+
+/* Desktop – 3 columns */
+@media screen and (min-width: 1000px) {
+    .temple-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure img {
+        height: 260px;
+    }
+}

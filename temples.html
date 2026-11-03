@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Temple Album</title>
+    <meta name="description" content="Temple Album learning activity for WDD 131.">
+    <meta name="author" content="Osagie Ohenhen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburgermenu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <!-- Hamburger button -->
+        <button id="menu" aria-label="Open navigation menu">☰</button>
+        <nav class="navigation">
+            <a href="temples.html" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2><a href="temples.html">Home</a></h2>
+        <div class="temple-grid">
+
+            <figure>
+                <img src="images/aba_nigeria.jpg" alt="Aba Nigeria Temple" width="400" height="250" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/accra_ghana.jpg" alt="Manti Utah Temple" width="400" height="250" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/adelaide-australia.jpg" alt="Payson Utah Temple" width="400" height="250"
+                    loading="lazy">
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/albuquerque-temple.jpg" alt="Yigo Guam Temple" width="400" height="250" loading="lazy">
+                <figcaption>AlbuquerqueTemple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/apia-samoa.jpg" alt="Washington D.C. Temple" width="400" height="250" loading="lazy">
+                <figcaption>Apia Samoa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/bern-switzerland.jpg" alt="Lima Peru Temple" width="400" height="250" loading="lazy">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/buenos-aires-argentina.jpg" alt="Mexico City Mexico Temple" width="400" height="250"
+                    loading="lazy">
+                <figcaption>Buenos Aires Argentina Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt-lake.jpg" alt="Salt Lake Temple" width="400" height="250" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/chicago-temple.jpg" alt="St. George Utah Temple" width="400" height="250"
+                    loading="lazy">
+                <figcaption>Chicago Temple</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Osagie Ohenhen 🌸 Nigeria / United Kingdom</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastmodified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
