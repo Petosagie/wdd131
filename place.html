@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moraine Lake | Banff National Park</title>
+    <meta name="description"
+        content="Discover Moraine Lake, the stunning turquoise alpine lake in Banff National Park, Alberta, Canada, nestled in the Valley of the Ten Peaks.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Moraine Lake</h1>
+    </header>
+
+    <main>
+        <section class="content-grid">
+            <article class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Area:</span> <span class="value">50 ha (0.5 km²)</span></li>
+                    <li><span class="label">Elevation:</span> <span class="value">1,884 m (6,181 ft)</span></li>
+                    <li><span class="label">Location:</span> <span class="value">Banff National Park, Alberta</span>
+                    </li>
+                    <li><span class="label">Country:</span> <span class="value">Canada</span></li>
+                    <li><span class="label">Max Depth:</span> <span class="value">14 m (46 ft)</span></li>
+                    <li><span class="label">Coordinates:</span> <span class="value">51°19′N 116°11′W</span></li>
+                    <li><span class="label">Time Zone:</span> <span class="value">MST (UTC−7)</span></li>
+                    <li><span class="label">Access:</span> <span class="value">Shuttle / Bike / Walk</span></li>
+                </ul>
+            </article>
+
+            <figure class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/moraine-lake-large.webp">
+                    <source media="(min-width: 600px)" srcset="images/moraine-lake-medium.webp">
+                    <img src="images/moraine-lake-small.webp"
+                        alt="Moraine Lake reflecting the Valley of the Ten Peaks in Banff National Park, Alberta, Canada"
+                        width="600" height="430">
+                </picture>
+            </figure>
+
+            <article class="weather">
+                <h2>Weather</h2>
+                <img class="weather-icon-mobile" src="images/weather-icon.svg" alt="Partly cloudy weather icon"
+                    width="64" height="64">
+                <ul>
+                    <li><span class="label">Temperature:</span> <span class="value">5 °C</span></li>
+                    <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                    <li><span class="label">Wind:</span> <span class="value">10 km/h</span></li>
+                    <li><span class="label">Wind Chill:</span> <span class="value" id="windchill">N/A</span></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-content">&copy;<span id="current-year"></span> 🍁 Osagie Ohenhen 🍁 Moraine Lake, Canada<br>
+            Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

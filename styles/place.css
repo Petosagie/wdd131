@@ -1,0 +1,253 @@
+/* Global CSS Variables */
+:root {
+    --primary-red: #C8102E;
+    /* Canada-inspired red */
+    --primary-red-dark: #9B0C24;
+    --accent-blue: #1E90FF;
+    --lake-teal: #00A8A8;
+    --rock-brown: #5C4033;
+    --forest-green: #2E5A1C;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --bg-light: #f0f4f8;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --border-radius: 8px;
+    --font-main: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+}
+
+/* Reset and Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Main */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Content Grid - Mobile first: stacked with image on top */
+.content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem 1rem 2rem;
+}
+
+/* Reorder so hero image appears first on mobile (matches wireframe) */
+.hero {
+    order: -1;
+    margin: 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background-color: #0a2a3a;
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16 / 11;
+}
+
+.data,
+.weather {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.4rem;
+    box-shadow: var(--shadow);
+}
+
+.data h2,
+.weather h2 {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: var(--primary-red);
+    margin-bottom: 0.9rem;
+    border-bottom: 2px solid var(--primary-red);
+    padding-bottom: 0.35rem;
+}
+
+/* Weather icon - mobile shows SVG */
+.weather-icon-mobile {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 64px;
+    height: 64px;
+}
+
+/* Pseudo-element for weather icon on larger view */
+@media (min-width: 768px) {
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.25rem;
+    }
+}
+
+.data ul,
+.weather ul {
+    list-style: none;
+}
+
+.data li,
+.weather li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 0.95rem;
+}
+
+.data li:last-child,
+.weather li:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--rock-brown);
+    flex-shrink: 0;
+}
+
+.value {
+    text-align: right;
+    color: var(--text-dark);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.25rem 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+/* ========== Tablet / Wider view ========== */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: minmax(220px, 280px) 1fr minmax(200px, 260px);
+        grid-template-areas: "data hero weather";
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+        align-items: start;
+    }
+
+    .data {
+        grid-area: data;
+        order: 0;
+    }
+
+    .hero {
+        grid-area: hero;
+        order: 0;
+        align-self: stretch;
+    }
+
+    .hero img {
+        height: 100%;
+        min-height: 320px;
+        object-fit: cover;
+        object-position: center 35%;
+    }
+
+    .weather {
+        grid-area: weather;
+        order: 0;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1000px) {
+    header {
+        padding: 1.25rem;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 300px 1fr 280px;
+        gap: 2rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .data,
+    .weather {
+        padding: 1.5rem 1.75rem;
+    }
+
+    .hero img {
+        min-height: 400px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
