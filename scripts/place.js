@@ -43,7 +43,7 @@ function setFooterDates() {
         second: "2-digit",
         hour12: false
     };
-    modifiedSpan.textContent = lastMod.toLocaleString("en-CA", options).replace(",", "");
+    modifiedSpan.textContent = lastMod.toLocaleString("en-GB", options).replace(",", "");
 }
 
 // Run on page load
