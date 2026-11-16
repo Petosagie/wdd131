@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 |Dynamic Web Fundamentals | Osagie Ohenhen</title>
+    <meta name="author" content="Osagie Ohenhen">
+    <meta name="description"
+        content="Explore a collection of beautiful temple images in the Temple Album learning activity for WDD 131 by Osagie Ohenhen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/f-temples.css">
+    <link rel="stylesheet" href="styles/f-temples-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/f-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 | Dynamic Web Fundamentals</span>
+        <h1>Temple Album</h1>
+
+        <!-- Hamburger button -->
+        <button id="menu" aria-label="Open navigation menu">☰</button>
+        <nav class="navigation">
+            <a href="#" class="active" data-filter="all">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2><a href="filtered-temples.html">Home</a></h2>
+
+        <section class="card">
+            <h3>Temple Gallery</h3>
+            <div class="temple-grid">
+
+
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>About This Album</h3>
+            <p>This Temple Album showcases beautiful temples from around the world.
+                Use the navigation links to filter by Old, New, Large, or Small temples.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Osagie Ohenhen 🌸 Nigeria / United Kingdom</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
